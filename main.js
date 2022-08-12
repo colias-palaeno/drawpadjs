@@ -2,7 +2,6 @@ const canvas = document.getElementById('canvas')
 const sticky = document.getElementById('sticky')
 const picker = document.getElementById('picker')
 const downloadButton = document.getElementById('downloadButton')
-// const openButton = document.getElementById('openButton')
 
 const ctx = canvas.getContext('2d')
 
@@ -18,7 +17,6 @@ addEventListener('keydown', keyDown)
 canvas.addEventListener('mousedown', start)
 canvas.addEventListener('contextmenu', rightClick)
 downloadButton.addEventListener('click', download)  
-// openButton.addEventListener('change', open)
 
 function resize() {
   canvas.width = document.documentElement.clientWidth - 16
@@ -61,11 +59,6 @@ function download() {
     link.download = 'Drawpad.js.png'; link.href = canvas.toDataURL()
     link.click(); link.remove()
 };
-
-/* function open() {
-    const img = new Image()
-    ctx.drawImage(img, 0, 0);
-} */
 
 function reposition(ev) {
   coord.x = ev.clientX - canvas.offsetLeft
