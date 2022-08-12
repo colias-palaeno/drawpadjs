@@ -1,0 +1,47 @@
+body {
+    text-shadow: 2px 2px rgb(206, 219, 219);
+    font-family: 'Segoe UI';
+    font-weight: bold
+}
+
+canvas {
+    box-shadow: 8px 8px 32px #6b6b6b;
+    image-rendering: pixelated
+}
+
+input {
+    border: none;
+    outline: none;
+	border-radius: 4px;
+    height: 24px;
+    box-shadow: 4px 4px 8px rgb(110, 89, 103)
+}
+
+a {
+    color: white;
+}
+
+#sticky {
+    text-shadow: 3px 3px 2px darkslategrey;
+    position: sticky;
+    padding-left: 6px;
+    top: 0;
+    display: grid;
+    background: #1e1e1e;
+    z-index: 1;
+    line-height: 11px;
+    color: white;
+}
+
+#title {
+    text-decoration: none;
+    font-size: xx-large
+}
+
+#stickyText {
+    padding: 6px 0px 0px 6px;
+}
+
+#picker {
+    width: 72px
+}
